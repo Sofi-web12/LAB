@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="css/lab1-3.css">
+</head>
+
+<body>
+    <h1>Моє резюме</h1>
+
+    <form id="resume-form">
+        <fieldset>
+            <legend>Особиста інформація</legend>
+            <input type="text" id="name" placeholder="Ім'я" required />
+            <input type="number" id="age" placeholder="Вік" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="tel" id="phone" placeholder="Телефон" required />
+        </fieldset>
+
+        <fieldset id="education-fields">
+            <legend>Освіта</legend>
+            <button type="button" id="add-education">+ Додати освіту</button>
+        </fieldset>
+
+        <fieldset id="experience-fields">
+            <legend>Досвід роботи</legend>
+            <button type="button" id="add-experience">+ Додати досвід</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Навички</legend>
+            <input type="text" id="skills" placeholder="Навички (через кому)" required />
+        </fieldset>
+
+        <button type="submit">Створити резюме</button>
+    </form>
+
+    <div id="resume" class="resume-output"></div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
